@@ -1,0 +1,40 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="J|yJHY0DVVA_D!FZcSYH">Player</variable><variable type="KIND_SpriteKind" id="ruKrEU;l,gI!|l/T{W2Z">Projectile</variable><variable type="KIND_SpriteKind" id="]nH9^ofQtEUC`P.DQ9Ng">Food</variable><variable type="KIND_SpriteKind" id="}0PquNqT5@p4m4q};@OP">Enemy</variable><variable id="l#`R4i+lV@n=/E39==9a">mySprite</variable><variable id="8^P^Fc:!ho6,d9~?i.z;">kitty kat</variable><variable type="BLOCKLY_TILESET_TYPE" id="~AdDO3nUyp#XPHTQ%`%U">0;16;16;0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</variable></variables><block type="pxt-on-start" x="0" y="0"><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="8^P^Fc:!ho6,d9~?i.z;">kitty kat</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . 
+e e e . . . . e e e . . . . 
+c d d c . . c d d c . . . . 
+c b d d f f d d b c . . . . 
+c 3 b d d b d b 3 c . . . . 
+f b 3 d d d d 3 b f . . . . 
+e d d d d d d d d e . . . . 
+e d f d d d d f d e b f b . 
+f d d f d d f d d f f d f . 
+f b d d b b d d 2 b f d f . 
+. f 2 2 2 2 2 2 d b d b f . 
+. f d d d d d d d f f f . . 
+. f d b d f f f d f . . . . 
+. . f f f f . . f f . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="8^P^Fc:!ho6,d9~?i.z;">kitty kat</field></block></value><next><block type="tilemap_editor"><field name="tilemap">tiles.createTilemap(
+            hex`12001200090c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0a07010101010101020101010101010101010b07040201010101020202020101010101010b07020202020101020101020101010202030b07010101020101020202020101010201010b07010102020101020102020201010201020b07010102010101020201010201010201020b07010102020201010202010201010201020b07010101010201010102010201010201020b07010101020202020202010201020201020b07020202020101010102010201020101020b07020102020201020202010202020101020b07020101010202020101010102020101020b07020101010101010101010102020202020b07020101010101010101010101010101010b07020202010101020101010101010101010b07010102020202020101010101010101010b080505050505050505050505050505050506`,
+            img`
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 . 2 2 2 2 2 2 2 2 2 2 
+2 . . 2 2 2 2 . . . . 2 2 2 2 2 2 2 
+2 . . . . 2 2 . 2 2 . 2 2 2 . . . 2 
+2 2 2 2 . 2 2 . . . . 2 2 2 . 2 2 2 
+2 2 2 . . 2 2 . 2 . . . 2 2 . 2 . 2 
+2 2 2 . 2 2 2 . . 2 2 . 2 2 . 2 . 2 
+2 2 2 . . . 2 2 . . 2 . 2 2 . 2 . 2 
+2 2 2 2 2 . 2 2 2 . 2 . 2 2 . 2 . 2 
+2 2 2 2 . . . . . . 2 . 2 . . 2 . 2 
+2 . . . . 2 2 2 2 . 2 . 2 . 2 2 . 2 
+2 . 2 . . . 2 . . . 2 . . . 2 2 . 2 
+2 . 2 2 2 . . . 2 2 2 2 . . 2 2 . 2 
+2 . 2 2 2 2 2 2 2 2 2 2 . . . . . 2 
+2 . 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 . . . 2 2 2 . 2 2 2 2 2 2 2 2 2 2 
+2 2 2 . . . . . 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+`,
+            [myTiles.tile0,sprites.builtin.forestTiles23,sprites.castle.tilePath5,sprites.dungeon.collectibleInsignia,sprites.dungeon.stairLadder,sprites.dungeon.purpleOuterSouth0,sprites.dungeon.purpleOuterSouthWest,sprites.dungeon.purpleOuterWest0,sprites.dungeon.purpleOuterSouthEast,sprites.dungeon.purpleOuterNorthWest,sprites.dungeon.purpleOuterNorthEast,sprites.dungeon.purpleOuterEast0,sprites.dungeon.purpleOuterNorth1],
+            TileScale.Sixteen
+        )</field><next><block type="mapplaceonrandomtile"><value name="sprite"><block type="variables_get"><field name="VAR" id="8^P^Fc:!ho6,d9~?i.z;">kitty kat</field></block></value><value name="tile"><shadow type="tileset_tile_picker"><field name="tile">sprites.dungeon.stairLadder</field></shadow></value><next><block type="camerafollow"><value name="sprite"><block type="variables_get"><field name="VAR" id="8^P^Fc:!ho6,d9~?i.z;">kitty kat</field></block></value><next><block type="gamecountdown"><value name="duration"><shadow type="math_number"><field name="NUM">20</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="spriteshittile" x="50" y="410"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker"><field name="tile">myTiles.tile0</field></shadow><block type="tileset_tile_picker"><field name="tile">sprites.dungeon.collectibleInsignia</field></block></value><value name="HANDLER_DRAG_PARAM_location"><shadow type="argument_reporter_custom"><mutation typename="tiles.Location"/><field name="VALUE">location</field></shadow></value><statement name="HANDLER"><block type="gameOver"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><field name="effect">effects.confetti</field><value name="win"><shadow type="toggleWinLose"><field name="win">true</field></shadow></value></block></statement></block></xml>
